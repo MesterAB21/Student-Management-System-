@@ -139,8 +139,8 @@ Student-Management-System/
 | [README.md](README.md) | Project overview | Understanding the project |
 
 **External Resources:**
-- [Django Official Documentation](https://docs.djangoproject.com/)
-- [Django Tutorial](https://docs.djangoproject.com/en/stable/intro/tutorial01/)
+- [Django 4.2 Official Documentation](https://docs.djangoproject.com/en/4.2/)
+- [Django 4.2 Tutorial](https://docs.djangoproject.com/en/4.2/intro/tutorial01/)
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.

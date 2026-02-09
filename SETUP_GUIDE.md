@@ -235,13 +235,13 @@ python manage.py createsuperuser
 After setting up Django:
 
 1. Explore the created project structure
-2. Read Django's official tutorial: https://docs.djangoproject.com/en/stable/intro/tutorial01/
+2. Read Django's official tutorial: https://docs.djangoproject.com/en/4.2/intro/tutorial01/
 3. Start building your Student Management System features
 4. Learn about Django models, views, and templates
 
 ## Getting Help
 
-- Django Documentation: https://docs.djangoproject.com/
+- Django 4.2 Documentation: https://docs.djangoproject.com/en/4.2/
 - Django Forum: https://forum.djangoproject.com/
 - Stack Overflow: Tag your questions with `django`
 
