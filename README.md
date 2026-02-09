@@ -2,6 +2,14 @@
 
 A Django-based Student Management System for managing student records, courses, and academic information.
 
+---
+
+## 🚨 Getting CommandNotFoundException Error?
+
+**Quick Answer:** Django is not installed! → See [Quick Start Guide](QUICKSTART.md) for the 2-minute fix.
+
+---
+
 ## Problem: CommandNotFoundException for django-admin
 
 If you encounter the error:
@@ -111,17 +119,28 @@ Install Python from [python.org](https://www.python.org/downloads/) and make sur
 ## Project Structure
 ```
 Student-Management-System/
-├── README.md
-├── requirements.txt
-├── SETUP_GUIDE.md
-├── setup.bat (Windows)
-├── setup.sh (Linux/Mac)
-└── Home/ (Django project - created after setup)
+├── README.md              # Main documentation (you are here)
+├── QUICKSTART.md          # Fast 2-minute setup guide
+├── SETUP_GUIDE.md         # Detailed installation instructions
+├── TROUBLESHOOTING.md     # Solutions for common errors
+├── requirements.txt       # Python dependencies
+├── setup.bat              # Automated setup for Windows
+├── setup.sh               # Automated setup for Linux/Mac
+└── Home/                  # Django project (created after setup)
 ```
 
-## Documentation
-- [Detailed Setup Guide](SETUP_GUIDE.md)
-- [Django Documentation](https://docs.djangoproject.com/)
+## 📚 Documentation Guide
+
+| Document | Purpose | When to Use |
+|----------|---------|-------------|
+| [QUICKSTART.md](QUICKSTART.md) | Get started in 2 minutes | First time setup, need quick fix |
+| [SETUP_GUIDE.md](SETUP_GUIDE.md) | Comprehensive installation guide | Want detailed instructions |
+| [TROUBLESHOOTING.md](TROUBLESHOOTING.md) | Fix CommandNotFoundException | Having django-admin errors |
+| [README.md](README.md) | Project overview | Understanding the project |
+
+**External Resources:**
+- [Django Official Documentation](https://docs.djangoproject.com/)
+- [Django Tutorial](https://docs.djangoproject.com/en/stable/intro/tutorial01/)
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
