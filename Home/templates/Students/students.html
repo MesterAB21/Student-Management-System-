@@ -43,11 +43,14 @@
                                        <td>
                                           <h2 class="table-avatar">
                                              {% if student.student_image %}
-    <img src="{{ student.student_image.url }}" class="avatar-img rounded-circle">
+    <img src="{{ student.student_image.url }}" class="avatar-img  mr-3  rounded-circle"
+     width="40"
+     height="40">
 {% else %}
-    <img src="https://via.placeholder.com/150" class="avatar-img rounded-circle">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.lZL3PoicrxKwDM53lAQOowHaE4?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3"  width="40"
+     height="40" class="avatar-img rounded-circle">
 {% endif %}
-                                             <a href="">{{ student.first_name }} {{ student.last_name }}</a>
+                                             <a href="{% url 'student_details' student.slug %}">{{ student.first_name }} {{ student.last_name }}</a>
                                           </h2>
                                        </td>
                                        <td>{{ student.student_class }}</td>
@@ -57,10 +60,10 @@
                                        <td>{{ student.parent.present_address }}</td>
                                        <td class="text-right">
                                           <div class="actions">
-                                             <a href="edit_student.html" class="btn btn-sm bg-success-light mr-2">
+                                             <a href="{% url 'edit_student' student.slug %}" class="btn btn-sm bg-success-light mr-2">
                                              <i class="fas fa-pen"></i>
                                              </a>
-                                             <a href="#" class="btn btn-sm bg-danger-light">
+                                             <a href="{% url 'delete_student' student.slug %}"  class="btn btn-sm bg-danger-light">
                                              <i class="fas fa-trash"></i>
                                              </a>
                                           </div>

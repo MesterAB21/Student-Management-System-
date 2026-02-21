@@ -15,7 +15,15 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
+EMAIL_HOST_USER = 'mesterab20@gmail.com'
+EMAIL_HOST_PASSWORD = 'ywme wfdf cuai losi'
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -40,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "school",
     "student",
+    "AuthHome",
 ]
 
 MIDDLEWARE = [
@@ -64,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'school.context_processors.notifications',
             ],
         },
     },
@@ -112,7 +122,11 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+AUTH_USER_MODEL = "AuthHome.CustomUser"
 
+AUTHENTICATION_BACKENDS = [
+    'AuthHome.backends.EmailBackend',
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/

@@ -32,6 +32,7 @@ class Student(models.Model):
     parent=models.OneToOneField(Parent,on_delete=models.CASCADE)
     slug=models.SlugField(unique=True,blank=True)
     
+    
     def __str__(self):
         return f'{self.first_name} {self.last_name} {self.Student_id}'
     def save(self,*args,**kwargs):
