@@ -32,9 +32,10 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SECRET_KEY = 'django-insecure-baot7pth_@b9lhu!vkdxnjc=po4oyp704kjl3&6v#7cghzo0ad'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# Allow Vercel and localhost
+ALLOWED_HOSTS = ['.vercel.app', 'localhost', '127.0.0.1']
 
 
 # Application definition

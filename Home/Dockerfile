@@ -14,8 +14,11 @@ RUN pip install -r requirements.txt
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
-# Expose port
-EXPOSE 8000
+# Run migrations
+RUN python manage.py migrate --noinput
 
-# Start Django with Gunicorn
-CMD gunicorn Home.wsgi:application --bind 0.0.0.0:8000
+# Expose port 8080 for Vercel
+EXPOSE 8080
+
+# Start Django with Gunicorn on port 8080
+CMD gunicorn Home.wsgi:application --bind 0.0.0.0:8080
