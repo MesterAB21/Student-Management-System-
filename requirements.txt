@@ -1,0 +1,16 @@
+# Django Student Management System Requirements
+
+# Core Framework
+Django>=4.2,<5.0
+
+# Database
+# SQLite is included with Python, but you can add PostgreSQL or MySQL drivers if needed
+# psycopg2-binary>=2.9  # For PostgreSQL
+# mysqlclient>=2.1      # For MySQL
+
+# Development Tools
+django-debug-toolbar>=4.2
+
+# Additional useful packages
+pillow>=10.0  # For image handling
+python-decouple>=3.8  # For environment variables
